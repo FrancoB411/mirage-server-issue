@@ -1,22 +1,11 @@
-# partner
+# mirage-issue
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+Repo recreating Mirage behavior where it does not recognize a namespaced route when you refresh the page. 
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd partner`
+* `cd mirage-issue`
 * `npm install`
 * `bower install`
 
@@ -25,28 +14,19 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+### To Manually Recreate the bug
 
-Make use of the many generators for code, try `ember help generate` for more details
+Visit /sales-quotes
+You should see a list of items. 
+Click the first item. 
+You should transition to /sales-quote/1
+Open dev tools
+refresh the page.
+In console you should see the following error:
+"Mirage: Your Ember app tried to GET '/sales-quotes/1',
+         but there was no route defined to handle this request."
 
-### Running Tests
+remove the names space from adapters/application.js and mirage/config.js
+Do the above again, and it there should be no error. 
 
-* `ember test`
-* `ember test --server`
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
