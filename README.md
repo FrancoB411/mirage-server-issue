@@ -32,4 +32,4 @@ Do the above again, and it there should be no error.
 In test env, it fails with and without the namespace
 
 ### running tests
-* Visit your app at [http://localhost:4200](http://localhost:4200/tests).
+* Visit your app at [http://localhost:4200/tests](http://localhost:4200/tests).
