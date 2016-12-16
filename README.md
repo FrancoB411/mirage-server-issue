@@ -16,14 +16,10 @@ Repo recreating Mirage behavior where it does not recognize a namespaced route w
 
 ### To Manually Recreate the bug
 
-  1. Visit /sales-quotes
-  1. You should see a list of items. 
-  1. Click the first item. 
-  1. You should transition to /sales-quote/1
+  1. Visit /sales-quotes. You should see a list of items. 
+  1. Click the first item. You should transition to /sales-quote/1
   1. Open dev tools
-  1. refresh the page.
-  1. In console you should see the following error:
-  1. "Mirage: Your Ember app tried to GET '/sales-quotes/1',
+  1. Refresh the page. In console you should see the following error: "Mirage: Your Ember app tried to GET '/sales-quotes/1',
          but there was no route defined to handle this request."
 
 remove the namesspace from adapters/application.js and mirage/config.js
