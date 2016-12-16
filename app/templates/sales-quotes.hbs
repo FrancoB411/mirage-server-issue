@@ -1,0 +1,8 @@
+<h1>Sales Quotes Route. List sales quotes here.</h1>
+<ul class="sales-quotes">
+{{#each model as |salesQuote|}}
+  {{#link-to 'sales-quote' salesQuote.id}}
+  <li>Sales Quote: {{salesQuote.id}} </li>  
+  {{/link-to}}
+{{/each}}
+</ul>
