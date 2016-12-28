@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'partner',
+    modulePrefix: 'mirage-issue',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

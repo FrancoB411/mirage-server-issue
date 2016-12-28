@@ -1,6 +1,6 @@
 import { test } from 'qunit';
-import  page  from 'partner/tests/pages/sales-quotes'
-import moduleForAcceptance from 'partner/tests/helpers/module-for-acceptance';
+import  page  from 'mirage-issue/tests/pages/sales-quotes'
+import moduleForAcceptance from 'mirage-issue/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | happy path');
 
